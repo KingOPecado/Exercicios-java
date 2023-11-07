@@ -3,9 +3,6 @@ package triangulo1909;
 
 import javax.swing.JOptionPane;
 
-import java.util.Scanner;
-
-
 public class Triangulo1909 {
 
     public static void main(String[] args) {
@@ -20,7 +17,7 @@ public class Triangulo1909 {
         }
         
         JOptionPane.showMessageDialog(null, "Tipo do triângulo: " + getTriangleType(lado1, lado2, lado3));
-        JOptionPane.showMessageDialog(null, "Área do triângulo: " + getTriangleArea(lado1, lado2, lado3));
+        JOptionPane.showMessageDialog(null, "Área do triângulo: " + String.format("%.2f", getTriangleArea(lado1, lado2, lado3)) + "cm²");
     }
     
     
